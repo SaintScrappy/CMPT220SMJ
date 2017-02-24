@@ -1,3 +1,10 @@
+//file: FinanceMgmt.java
+//author: Shawn M Joseph
+//course: CMPT 220
+//assignment: lab 1
+//Due January 26th
+//version: 1.0
+
 import java.util.Scanner;
 
 public class FinanceMgmt {
