@@ -1,7 +1,7 @@
 //file: NumbLetMap.java
 //author: Shawn M Joseph
 //course: CMPT 220
-//assignment: lab 1
+//assignment: lab 2
 //Due January 26th
 //version: 1.0
 
