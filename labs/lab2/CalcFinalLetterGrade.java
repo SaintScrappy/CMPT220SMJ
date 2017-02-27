@@ -2,7 +2,7 @@
 //author: Shawn M Joseph
 //course: CMPT 220
 //assignment: lab 2
-//Due January 26th
+//Due February 9th
 //version: 1.0
 
 import java.util.Scanner;
@@ -46,6 +46,5 @@ public class CalcFinalLetterGrade {
 		System.out.print("D-"); 
 	  else if (finalgrade < 60.0)
 		System.out.print("F, I don't think you should hang this one on the fridge."); 
-	
   }
 }

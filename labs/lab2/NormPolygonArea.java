@@ -2,7 +2,7 @@
 //author: Shawn M Joseph
 //course: CMPT 220
 //assignment: lab 2
-//Due January 26th
+//Due February 9th
 //version: 1.0
 
 import java.util.Scanner;
@@ -19,6 +19,6 @@ public class NormPolygonArea {
    
   double area = n * Math.pow(s, 2) / (4 * Math.tan(Math.PI / n));
  
-  System.out.println("The polygon area is " + area);
+    System.out.println("The polygon area is " + area);
  }
 }

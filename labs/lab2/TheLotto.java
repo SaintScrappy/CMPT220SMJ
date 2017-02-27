@@ -2,7 +2,7 @@
 //author: Shawn M Joseph
 //course: CMPT 220
 //assignment: lab 2
-//Due January 26th
+//Due February 9th
 //version: 1.0
 
 import java.util.Scanner;
@@ -27,7 +27,7 @@ public class TheLotto {
   System.out.println("The lottery number is " + lotteryDigit1
     + lotteryDigit2 + lotteryDigit3);
  
-  // Check the guess
+  //Check the guess
   if (guess == lottery)
    System.out.println("Exact match: you got Retirement");
   else if ((guessDigit1 == lotteryDigit2 && guessDigit2 == lotteryDigit1 && guessDigit3 == lotteryDigit3)

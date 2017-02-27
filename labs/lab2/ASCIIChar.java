@@ -2,7 +2,7 @@
 //author: Shawn M Joseph
 //course: CMPT 220
 //assignment: lab 2
-//Due January 26th
+//Due February 9th
 //version: 1.0
 
 import java.util.Scanner;
@@ -17,6 +17,5 @@ public class ASCIIChar {
  
   System.out.print("The ASCII character " + s + " is "
     + (char) s);
-  
   }
 }

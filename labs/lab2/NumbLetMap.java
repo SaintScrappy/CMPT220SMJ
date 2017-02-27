@@ -2,7 +2,7 @@
 //author: Shawn M Joseph
 //course: CMPT 220
 //assignment: lab 2
-//Due January 26th
+//Due February 9th
 //version: 1.0
 
 import java.util.Scanner;
@@ -11,13 +11,13 @@ public class NumbLetMap {
   public static void main(String[] args) {
 
   System.out.print("Enter a letter:");
-    Scanner input = new Scanner(System.in);
-    String s = input.next();
+  Scanner input = new Scanner(System.in);
+  String s = input.next();
  
-    char c = s.toLowerCase().charAt(0);
-    int n;
+  char c = s.toLowerCase().charAt(0);
+  int n;
  
-    switch (c) {
+  switch (c) {
     case 'a':
     case 'b':
     case 'c':

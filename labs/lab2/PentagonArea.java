@@ -2,7 +2,7 @@
 //author: Shawn M Joseph
 //course: CMPT 220
 //assignment: lab 2
-//Due January 26th
+//Due February 9th
 //version: 1.0
 
 import java.util.Scanner;
@@ -18,6 +18,6 @@ public class PentagonArea {
   double area = 5 * Math.pow(s, 2) / (4 * Math.tan(Math.PI / 5));
  
   area = Math.round(area*100) / 100.0;
-  System.out.println("The pentagon's area is " + area);
+    System.out.println("The pentagon's area is " + area);
  }
 }
