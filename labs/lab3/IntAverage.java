@@ -4,25 +4,19 @@ public class IntAverage {
   public static void main(String[] args){
   
   Scanner input = new Scanner(System.in);
-  
   System.out.print("Enter an integer, the input ends if it is 0: ");
    
-   int n =input.nextInt();
+   int n = input.nextInt();
    int countNeg = 0 ;
    int countPos = 0;
    float sum = 0;
   
    if (n!= 0) {
      sum = sum + n; 
-	 
-     do 
-     {countPos++;
-	 System.out.println(countPos);} 
-	 //System.out.println(countPos);}
-     while(n > 0);
-	 
-     do 
-	 {countNeg++;}
+     do {countPos++;}
+	 while(n > 0);
+	
+     do {countNeg++;}
      while (n < 0);
  } 
 	System.out.println(countPos);
