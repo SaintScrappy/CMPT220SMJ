@@ -19,6 +19,6 @@ public class NormPolygonArea {
    
   double area = n * Math.pow(s, 2) / (4 * Math.tan(Math.PI / n));
  
-    System.out.println("The polygon area is " + area);
+  System.out.println("The polygon area is " + area);
  }
 }

@@ -9,6 +9,7 @@ import java.util.Scanner;
 
 public class CalcFinalLetterGrade {
   public static void main(String[] args) {
+	  
     double midterm;
     double finalExam;
     double project;	
