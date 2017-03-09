@@ -1,3 +1,10 @@
+//file: SmallestElement.java
+//author: Shawn M Joseph
+//course: CMPT 220
+//assignment: lab 4
+//Due March 3rd
+//version: 1.0
+
 import java.util.Scanner;
 
 public class SmallestElement {
@@ -7,15 +14,11 @@ public class SmallestElement {
     double[] numbers = new double[10];
 	System.out.print("Put in ten numbers:");
 	
-	int i = 0;
-	numbers[i] = input.nextDouble();
-	
-	do {i++;} 
-	  while (i < numbers.length);
-		  
+	for (int i = 0; i < numbers.length; i++) {
+     numbers[i] = input.nextDouble();
+	}	  
     System.out.println("The minimum number is: " + min(numbers));
   }
-	
   public static double min(double[] array){
 	  
     double min = array[0];
