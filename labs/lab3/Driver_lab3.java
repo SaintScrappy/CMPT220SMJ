@@ -17,12 +17,8 @@ public class Driver_lab3 {
 	double y1 = input.nextDouble();
 	double x2 = input.nextDouble();
 	double y2 = input.nextDouble();
-	double p = input.nextDouble();
-	
-	double res = 0.0;
+	float p = input.nextFloat();
 	 
-	 
-	
 	double pNorm = Math.pow((Math.pow((Math.abs(x1 - x2)),p)) + (Math.pow((Math.abs(y1 - y2)),p)),1/p);
 	System.out.print(pNorm);
   }
