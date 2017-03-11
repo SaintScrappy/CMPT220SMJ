@@ -12,15 +12,19 @@ public class Driver_lab3 {
 	  
     Scanner input = new Scanner(System.in);
     System.out.print("Enter an integer: ");
-	double x = input.nextLong();
 	
-    double x;
-	double x1;
-	double y;
-	double y1;
-	double p;
+    double x1 = input.nextDouble();
+	double y1 = input.nextDouble();
+	double x2 = input.nextDouble();
+	double y2 = input.nextDouble();
+	double p = input.nextDouble();
 	
-	double formula = (x1−x2|p+|y1−y2|p)1/p
+	double res = 0.0;
+	 
+	 
 	
+	double pNorm = Math.pow((Math.pow((Math.abs(x1 - x2)),p)) + (Math.pow((Math.abs(y1 - y2)),p)),1/p);
+	System.out.print(pNorm);
   }
 }
+	//    (   (x1-x2)^p    +    (y1-y2)^p  )^1.0/p

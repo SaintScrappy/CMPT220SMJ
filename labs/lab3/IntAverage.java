@@ -11,32 +11,23 @@ public class IntAverage {
   public static void main(String[] args){
   
     Scanner input = new Scanner(System.in);
-    System.out.print("Enter an integer, the input ends if it is 0: ");
+    System.out.print("Enter an integer, put 0 at the end: ");
    
-    //int n = input.nextInt();
-	int [] userInput = new int [5];
-	
-	  for (int i = 0; i < userInput.length; i++)
-    {
-        System.out.println("Please enter number");
-        userInput[i] = input.nextInt();
-    }
-	
+    int n = 0;
     int countNeg = 0;
     int countPos = 0;
     float sum = 0;
-    for (int j=0; j<userInput.length;j++)
-	{
-	if (userInput[j]>0){	
+  
     do {
-	countPos++;
-    } while (j<userInput.length);
-	}
-	if(userInput[j]<0){
-	do {countNeg++;}
-	while(j<userInput.length);
-	}
-	}
+	sum = sum + n;
+	
+    if (n > 0) {
+    countPos++;
+    } else if (n < 0) {
+      countNeg++;
+      }
+    } while ((n = input.nextInt()) != 0);
+	
       if (countPos + countNeg == 0) {
       System.out.println("No numbers are entered except 0");
       System.exit(0);
