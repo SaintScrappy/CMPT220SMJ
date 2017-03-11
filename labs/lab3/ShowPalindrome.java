@@ -1,3 +1,10 @@
+//file: ShowPalindrome.java
+//author: Shawn M Joseph
+//course: CMPT 220
+//assignment: lab 3
+//Due February 23rd
+//version: 1.0
+
 import java.util.Scanner;
 
 public class ShowPalindrome {
