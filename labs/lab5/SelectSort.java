@@ -11,4 +11,17 @@ public class SelectSort {
     double [] select = {10.0, 5.0, 6.0, 25.0, 7.0, 8.0, 9.0, 10.1};
   
   }
+   public static void selectionSort(int[] list) {
+  for (int i = list.length-1; i > 0; i--) {
+   int currentMax = list[i];
+   int currentMaxIndex = i;
+ 
+   for (int j = 0; j < i; j++) {
+    if (currentMax < list[j]) {
+     currentMax = list[j];
+     currentMaxIndex = j;
+    }
+   }
+  }
+ }
 }
