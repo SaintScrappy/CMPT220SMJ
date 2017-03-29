@@ -5,23 +5,39 @@
 //Due March 30th
 //version: 1.0
 
+import java.util.Scanner;
+
 public class SelectSort {
   public static void main (String[] args) {
 	  
-    double [] select = {10.0, 5.0, 6.0, 25.0, 7.0, 8.0, 9.0, 10.1};
-  
+	Scanner input = new Scanner(System.in);  
+    int[] select = new int[10];
+	System.out.print("Put in ten numbers: ");
+	
+	for(int s = 0; s < select.length; s++) {
+      select[s] = input.nextInt();
+	}
+	System.out.print("Here is the sorted list: ");
+	  selectionSort(select);
+	for(int s = 0; s < select.length; s++) {
+      System.out.print(select[s] + " ");
+	}
   }
    public static void selectionSort(int[] list) {
-  for (int i = list.length-1; i > 0; i--) {
-   int currentMax = list[i];
-   int currentMaxIndex = i;
+     for (int s = list.length-1; s > 0; s--) {
+     int currentMax = list[s];
+     int currentMaxIndex = s;
  
-   for (int j = 0; j < i; j++) {
-    if (currentMax < list[j]) {
-     currentMax = list[j];
-     currentMaxIndex = j;
-    }
-   }
-  }
- }
+     for (int j = 0; j < s; j++) {
+       if (currentMax < list[j]) {
+       currentMax = list[j];
+       currentMaxIndex = j;
+       }
+     }
+     if (currentMaxIndex != s) {
+       list[currentMaxIndex] = list[s];
+       list[s] = currentMax;
+     }
+     }
+}
 }
