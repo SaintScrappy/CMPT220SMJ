@@ -11,14 +11,19 @@ public class VectConvolution {
   public static void main (String [] args) {
 	  
     Scanner input = new Scanner(System.in);
-    double [] Vector1 = input.nextDouble();
-	double [] Vector2 = input.nextDouble();
+    int [] Vector1 = input.nextDouble();
+	int [] Vector2 = input.nextDouble();
 	
 	}
  public static double[] convolveVectors(double[] Vector1, double[] Vector2) {
    double[] Result = new double[(vFirst.length + vSecond.length) - 1];
-    
-
-    return Result;  
+   
+   for(int idx = 0; idx < vResult.length; idx++) {
+     for(int shift = 0; shift < vSecond.length; shift++){
+       if(((idx-shift) >= 0) && (idx-shift < vFirst.length))
+         vResult[idx] = sum (vFirst[idx - shift] * vSecond[shift]);
+	 }
+   }
+   return Result;  
   }
 }
