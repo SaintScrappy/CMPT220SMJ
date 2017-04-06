@@ -18,7 +18,6 @@ public class PartList {
     }
     partition (list);
 	System.out.print("The partitioned list is: ");
-   
     for (int i = 0; i < list.length; i++) {
       System.out.print(list[i] + " ");
     }
