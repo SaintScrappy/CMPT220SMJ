@@ -8,9 +8,19 @@
 import java.util.Scanner;
 
 public class DeathCalculator{
-  public static void main {
-    
-	Scanner input = new Scanner (System.in);
+  public static void main (String [] args){
+	  
+	Scanner input = new Scanner (System.in);  
+    System.out.println("You are now in DeathCalculator.exe.");
+	System.out.println("Introductory Paragraph*");
+	
+	String myHand = "No Item.";
+	String myHand2 = "Death Calculator";
+	String myOtherHand = "Compass";
+	
+	System.out.println("You currently have" + myHand + "in your hand.");
+	
+	int DeathCalc = 0;
   
   }
 }
