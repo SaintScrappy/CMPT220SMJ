@@ -1,3 +1,3 @@
-public class Death Calculator {
-  private String info = "An odd device
+class Death Calculator {
+  // attribute public String info = "An odd device
 }
