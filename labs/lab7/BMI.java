@@ -1,5 +1,6 @@
 public class BMI {
 	
+  String BMI = "";	
   public int age;
   public double weight;
   public double feet;
