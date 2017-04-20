@@ -1,8 +1,8 @@
 //file: NormPolygonArea.java
 //author: Shawn M Joseph
 //course: CMPT 220
-//assignment: lab 1
-//Due January 26th
+//assignment: lab 2
+//Due February 9th
 //version: 1.0
 
 import java.util.Scanner;

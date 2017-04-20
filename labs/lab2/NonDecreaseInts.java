@@ -1,8 +1,8 @@
 //file: NonDecreaseInts.java
 //author: Shawn M Joseph
 //course: CMPT 220
-//assignment: lab 1
-//Due January 26th
+//assignment: lab 2
+//Due February 9th
 //version: 1.0
 
 import java.util.Scanner;
@@ -22,26 +22,19 @@ public class NonDecreaseInts {
      temp = number1;
      number1 = number2;
      number2 = temp;
-  }
- 
+    }
     if (number2 > number3) {
      temp = number2;
      number2 = number3;
      number3 = temp;
-  }
- 
+    }
     if (number1 > number2) {
      temp = number1;
      number1 = number2;
      number2 = temp;
-  }
- 
+    }
   System.out.println(number1);
   System.out.println(number2);
   System.out.println(number3);
- 
- 
  }
- 
-
 }

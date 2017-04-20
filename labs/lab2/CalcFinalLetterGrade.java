@@ -1,14 +1,15 @@
 //file: CalcFinalLetterGrade.java
 //author: Shawn M Joseph
 //course: CMPT 220
-//assignment: lab 1
-//Due January 26th
+//assignment: lab 2
+//Due February 9th
 //version: 1.0
 
 import java.util.Scanner;
 
 public class CalcFinalLetterGrade {
   public static void main(String[] args) {
+	  
     double midterm;
     double finalExam;
     double project;	
@@ -46,6 +47,5 @@ public class CalcFinalLetterGrade {
 		System.out.print("D-"); 
 	  else if (finalgrade < 60.0)
 		System.out.print("F, I don't think you should hang this one on the fridge."); 
-	
   }
 }
