@@ -1,7 +1,14 @@
+//file: Rectangle.java
+//author: Shawn M Joseph
+//course: CMPT 220
+//assignment: Lab 6
+//Due March 30th
+//version: 1.0
+
 public class Rectangle {
 	
-  double width;
-  double height;
+  public double width;
+  public double height;
   
   public Rectangle() {
     this.width = 1.0;
