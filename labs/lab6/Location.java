@@ -1,21 +1,35 @@
+//file: Location.java
+//author: Shawn M Joseph
+//course: CMPT 220
+//assignment: Lab 6
+//Due April 20th
+//version: 1.0 
+
 public class Location {
 	
   public int row;
   public int column; 
   public double maxValue;
   
-  public static Location locateLargest(double[][]a)
-	//double max = 0;
-	//int[] largestint = new int [2];
-    //for(int s=0; s < z.length; s++){
-	  //for (int s2 = 0; s2 < z[s].length; s2++) {
-        //if (z[s][s2] > max) {
-         // max = z[s][s2];
-          //largestint[0] = s;
-          //largestint[1] = s2;
-        //}
-      //}
-   // }
-	//return largestint;    
-  //}
+  public Location (int row, int column, double maxValue) {
+    this.row = row;
+	this.column = column;
+	this.maxValue = maxValue;
+  }
+  public static Location locateLargest(double[][]a) {
+	int row = 0;
+	int column = 0;
+	double maxValue = a[row][column];
+	
+    for(int s = 0; s < a.length; s++){
+	  for (int s2 = 0; s2 < a[s].length; s2++) {
+        if (maxValue < a[s][s2]) {
+          maxValue = a[s][s2];
+          row = s;
+          column = s2;
+        }
+      }
+    }
+	return new Location(row, column, maxValue);   
+  }
 }
