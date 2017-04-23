@@ -2,13 +2,13 @@
 //author: Shawn M Joseph
 //course: CMPT 220
 //assignment: Lab 6
-//Due March 30th
+//Due April 20th
 //version: 1.0
 
 public class Rectangle {
 	
-  public double width;
-  public double height;
+  private double width;
+  private double height;
   
   public Rectangle() {
     this.width = 1.0;

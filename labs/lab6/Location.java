@@ -7,9 +7,9 @@
 
 public class Location {
 	
-  public int row;
-  public int column; 
-  public double maxValue;
+  private int row;
+  private int column; 
+  private double maxValue;
   
   public Location (int row, int column, double maxValue) {
     this.row = row;
