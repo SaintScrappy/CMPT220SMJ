@@ -52,4 +52,16 @@ public class BMI {
   public double getHeight(){
 	return height;
   }
+  public double getInches(){
+	return inches;
+  }
+  public void setInches(double inches){
+	this.inches = inches;
+  }
+  public double getFeet(){
+	return feet;
+  }
+  public void setFeet(double feet){
+	this.feet = feet;
+  }
 }

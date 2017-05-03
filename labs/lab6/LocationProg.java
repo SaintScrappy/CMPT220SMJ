@@ -10,6 +10,8 @@ import java.util.Scanner;
 public class LocationProg {
   public static void main (String[] args) {
 	  
+	
+	  
     System.out.print("Enter the rows and enter the columns: ");
     Scanner input = new Scanner(System.in);
   
@@ -25,6 +27,6 @@ public class LocationProg {
 	}
 	Location location = Location.locateLargest(s);
 	System.out.println("The location of the largest element is: "
-		+ location.maxValue + " at (" + location.row + ", " + location.column + ").");
+		+ location.getmaxValue() + " at (" + location.getRow() + ", " + location.getColumn() + ").");
   }
 }
