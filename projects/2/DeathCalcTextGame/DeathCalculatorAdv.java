@@ -22,6 +22,8 @@ public class DeathCalculatorAdv{
 	System.out.println("...Not many good options, but what will you take? Toothpick or Bible.");
 	user.chooseWeap();
 	
+	System.out.println("");
+	
 		//DeathCalculatorAdv game = new DeathCalculatorAdv();
 	
 	//Player variables
@@ -35,10 +37,4 @@ public class DeathCalculatorAdv{
 	
 	
   }
-  public void Calculation() {
-	  int DeathCalc = 0;
-	  if (DeathCalc >= 10)
-      System.exit(0);
-      System.out.println("The number on the calculator reads " + DeathCalc + ".");  
-    }
 }

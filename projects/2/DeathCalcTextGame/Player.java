@@ -29,6 +29,8 @@ public class Player {
       throw new Exception("???");
 	}
   }
+  public void choosePath(){
+  }
   
   public String getName() {
 	return name;
