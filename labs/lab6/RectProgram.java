@@ -13,14 +13,14 @@ public class RectProgram {
     newrects[1] = new Rectangle (3.5, 35.9);
   
     System.out.println("\n Rectangle 1");
-      System.out.println("Width:     " + newrects[0].width);
-      System.out.println("Height:    " + newrects[0].height);
+      System.out.println("Width:     " + newrects[0].getWidth());
+      System.out.println("Height:    " + newrects[0].getHeight());
 	  System.out.println("Area:      " + newrects[0].getArea());
 	  System.out.println("Perimeter: " + newrects[0].getPerimeter());
 
 	System.out.println("\n Rectangle 2");
-	  System.out.println("Width:     " + newrects[1].width);
-	  System.out.println("Height:    " + newrects[1].height);
+	  System.out.println("Width:     " + newrects[1].getWidth());
+	  System.out.println("Height:    " + newrects[1].getHeight());
 	  System.out.println("Area:      " + newrects[1].getArea());
 	  System.out.println("Perimeter: " + newrects[1].getPerimeter());
   }
