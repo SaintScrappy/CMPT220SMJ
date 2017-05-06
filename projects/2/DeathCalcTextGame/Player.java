@@ -58,11 +58,12 @@ public class Player {
 	    this.location = location;	
 	  }
 	  else if(location.equalsIgnoreCase("Attic")) {
+		Attic attic = new Attic();
 		//place holder 
-		System.out.println("You proceed to out of your room, and you unlatched the compartment");
-		System.out.println("to bring down the ladder to the attic. You climb up the stairs, and ");
-		System.out.println("realize that it is a little too dark.");
-		this.inAttic();
+		//System.out.println("You proceed to out of your room, and you unlatched the compartment");
+		//System.out.println("to bring down the ladder to the attic. You climb up the stairs, and ");
+		//System.out.println("realize that it is a little too dark.");
+		//this.inAttic();
 	    this.location = location;	
 	  }
 	  else if(location.equalsIgnoreCase("ChildsRoom")) {
