@@ -5,19 +5,27 @@ public class Queue {
   private int capacity = 8;
   
   
-  private Queue () {
+  public Queue () {
     
   }
-  public static enqueue(int v) {
+  public void enqueue(int v) {
   //adds v into the queue
     if(size >= elements.length){
-	  int[] temp = new int[];
+	  int[] temp = new int[elements.length * 2];
+	  System.arraycopy(elements, 0, temp, 0, elements.length);
+	  elements = temp;
 	}
+	elements[size++] = v;
   }
-  public static dequeue() {
+  public int dequeue() {
   //removes return element from queue
+    int v = elements[0];
+    int[] temp = new int[elements.length];
+    elements = temp;
+    size--;
+    return v;
   }
-  public static empty () {
+  public boolean empty () {
   //return true if queue is empty (loop)
     return size == 0;
   }
