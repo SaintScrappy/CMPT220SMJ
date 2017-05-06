@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class Player {
   private String name;
   private String weapon;
-  private String location;
   private String freehand;
   private Scanner input;
   private int choice;
@@ -37,65 +36,47 @@ public class Player {
 	  }
 	}
   }
-  public void choosePath(){
+  public void choosePath()throws Exception{
 	  //track locations/path
 	  
-    while(this.location == null){
+    while(this.choice == 0){
 	  
 	  System.out.println("");
 	  System.out.println("There's the Kitchen, the Bathroom, the Attic, and the ChildsRoom");
 	  System.out.println("Where will you go?");
-	  String location = input.nextLine();
-      if(location.equalsIgnoreCase("Kitchen")){
+	  int choice = input.nextInt();
+	  
+      if(this.choice == (1)){
 		//Link to location objects.
 		System.out.println("This area is closed for beta. Proceed to attic. (= ");
 		this.choosePath();
-	    this.location = location;
+	    this.choice = choice;
       }	
-      else if(location.equalsIgnoreCase("Bathroom")) {
+      else if(this.choice == (2)) {
 		System.out.println("This area is closed for beta. Proceed to attic. (= ");
 		this.choosePath();
-	    this.location = location;	
+	    this.choice = choice;	
 	  }
-	  else if(location.equalsIgnoreCase("Attic")) {
+	  else if(this.choice == (3)) {
 		Attic attic = new Attic();
+		attic.inAttic();
 		//place holder 
 		//System.out.println("You proceed to out of your room, and you unlatched the compartment");
 		//System.out.println("to bring down the ladder to the attic. You climb up the stairs, and ");
 		//System.out.println("realize that it is a little too dark.");
 		//this.inAttic();
-	    this.location = location;	
+	    this.choice = choice;	
 	  }
-	  else if(location.equalsIgnoreCase("ChildsRoom")) {
+	  else if(this.choice == (4)) {
 		System.out.println("This area is closed for beta. Proceed to attic. (= ");
 		this.choosePath();
-	    this.location = location;		
+	    this.choice = choice;		
 	  }
 	}
   }
   
   //placeholder
-  public void inAttic(){
-	
-	while(choice == 0){	
-	  
-	  System.out.println("");
-	  System.out.println("1. Flick the light switch.");
-	  System.out.println("2. Don't flick the light switch.");
-	  int choice = input.nextInt();
-	
-	  if (choice == (1)){
-	    DeathCalc++;
-        System.out.print("Testing1" + DeathCalc);
-	    this.choice = choice;
-	  }
-	  else if(choice == (2)){
-	    DeathCalc = DeathCalc + 10;
-	    System.out.println("Testing2" + DeathCalc);	
-	    this.choice = choice;
-	  }
-    }
-  }
+  
   public void endGame(){
 	if (DeathCalc >= 10){
 	  System.out.println("The number on the calculator reads " + DeathCalc + ".");
@@ -118,12 +99,12 @@ public class Player {
   public void setWeapon(String weapon) {
     this.weapon = weapon;
   }
-  public String getLocation() {
-	return location;
-  }
-  public void setLocation(String location) {
-    this.location = location;
-  }
+ // public String getLocation() {
+	//return location;
+  //}
+  //public void setLocation(String location) {
+    //this.location = location;
+  //}
   public String getfreeHand() {
 	return freehand;
   }

@@ -10,8 +10,6 @@ import java.util.Scanner;
 public class LocationProg {
   public static void main (String[] args) {
 	  
-	
-	  
     System.out.print("Enter the rows and enter the columns: ");
     Scanner input = new Scanner(System.in);
   

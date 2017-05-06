@@ -5,9 +5,8 @@ public class Queue {
   private int capacity = 8;
   
   
-  public Queue () {
-    
-  }
+  public Queue () {}
+  
   public void enqueue(int v) {
   //adds v into the queue
     if(size >= elements.length){
