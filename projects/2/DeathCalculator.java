@@ -1,6 +1,6 @@
 public class DeathCalculator {
 	private int DeathCalc;
-	
+	//Linking hp bar?
 	public DeathCalculator(){
 	  this.DeathCalc = 0;
 	}
