@@ -1,20 +1,10 @@
-public class Test { 
+import java.util.ArrayList;
+
+public class Test extends A { 
   public static void main(String[] args) {
-    B b = new B();
-    b.m(5);
-    System.out.println("i is " + b.i);
-  }
-}
-
-class A {
-  int i;
-
-  public void m(int i) { 
-    this.i = i; 
-  }
-}
-
-class B extends A {
-  public void m(String s) {
+    String[] array = {"red", "green", "blue"};
+ArrayList list = new ArrayList<>(Arrays.asList(array));
+list.add(0, "red");
+System.out.println(list);
   }
 }

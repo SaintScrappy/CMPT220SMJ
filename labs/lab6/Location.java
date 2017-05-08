@@ -11,7 +11,7 @@ public class Location {
   private int column; 
   private double maxValue;
   
-  public void Location (int row, int column, double maxValue) {
+  public Location (int row, int column, double maxValue) {
     this.row = row;
 	this.column = column;
 	this.maxValue = maxValue;

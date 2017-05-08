@@ -10,11 +10,12 @@ import java.util.Scanner;
 public class MultiDimens {
   public static void main (String[] args) {
 	  
+	Scanner input = new Scanner(System.in);  
+	  
 	System.out.print("Enter the rows and enter the columns: ");
-    Scanner input = new Scanner(System.in);
-	
 	int s = input.nextInt();
     int j = input.nextInt();
+	//Puts user input into two-dimensional array
 	double[][] multilist = new double[s][j];
 	
 	System.out.print("Enter your array: ");
@@ -23,11 +24,12 @@ public class MultiDimens {
         multilist[x][y] = input.nextDouble();
 	  }
 	}
-	
+	//Locates largest element
 	int[] result = locateLargest(multilist);
 	System.out.print("The largest element's location is ("+ result[0]+", "+result[1]+")");
   
   }
+  //Method returns largest element within two-dimensional array
   public static int[] locateLargest(double[][] z) {
 	double max = 0;
 	int[] largestint = new int [2];

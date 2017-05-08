@@ -1,19 +1,7 @@
-class A {
-  public A() {
-    System.out.println(
-      "The default constructor of A is invoked");
-  }
+public class A extends B {
 }
 
-class B extends A {
-  public B() {
-    System.out.println(
-      "The default constructor of B is invoked");
-  }
-}
-
-public class C  {
-  public static void main(String[] args) {
-    B b = new B();
+class B {
+  public B(String s) {
   }
 }
