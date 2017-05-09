@@ -34,7 +34,7 @@ public class Location {
   public void setmaxValue(double maxValue) {
     this.maxValue = maxValue;
   }
-  
+  //Gets largest element
   public static Location locateLargest(double[][]a) {
 	int row = 0;
 	int column = 0;

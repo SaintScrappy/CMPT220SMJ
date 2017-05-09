@@ -3,15 +3,14 @@ import java.util.Scanner;
 public class Player {
   private String name;
   private String weapon;
-  private String freehand;
   private Scanner input;
-  private int choice;
+  private String location;
+  private String choice;
   public int DeathCalc;
   
   public Player() {
     input = new Scanner(System.in);
 	this.DeathCalc = 0;
-	this.choice = 0;
   }
   //Method called to ask user for their name and allow their input to == name attribute.
   public void chooseName(){
@@ -19,6 +18,7 @@ public class Player {
 	this.name = this.input.nextLine();
 	System.out.println("Ah..." + this.name + ". That's a nice name..");
   }
+  //Methods sets the weapon string equal to user input of two objects.
   public void chooseWeap(){
 	  
 	while(this.weapon == null){
@@ -28,62 +28,44 @@ public class Player {
       String weapon = input.nextLine();
 	  if(weapon.equalsIgnoreCase("Toothpick")) {
 	    System.out.println("Hm. Your life rests in your hand.");
-		this.weapon = weapon;
+		this.weapon = "Toothpick";
 	  }
 	  else if(weapon.equalsIgnoreCase("Bible")) {
         System.out.println("");
-		this.weapon = weapon;
+		this.weapon = "Bible";
 	  }
 	}
   }
   public void choosePath()throws Exception{
-	  //track locations/path
 	  
-    while(this.choice == 0){
+    while(this.location == null){
 	  
 	  System.out.println("");
 	  System.out.println("There's the Kitchen, the Bathroom, the Attic, and the ChildsRoom");
 	  System.out.println("Where will you go?");
-	  int choice = input.nextInt();
+	  String location = input.nextLine();
 	  
-      if(this.choice == (1)){
+      if(location.equalsIgnoreCase("Kitchen")){
 		//Link to location objects.
 		System.out.println("This area is closed for beta. Proceed to attic. (= ");
 		this.choosePath();
-	    this.choice = choice;
+	    this.location = location;
       }	
-      else if(this.choice == (2)) {
+      else if(location.equalsIgnoreCase("Bathroom")) {
 		System.out.println("This area is closed for beta. Proceed to attic. (= ");
-		this.choosePath();
-	    this.choice = choice;	
+		this.choosePath(); //NullPointerException
+	    this.location = location;	
 	  }
-	  else if(this.choice == (3)) {
+	  else if(location.equalsIgnoreCase("Attic")) {
 		Attic attic = new Attic();
 		attic.inAttic();
-		//place holder 
-		//System.out.println("You proceed to out of your room, and you unlatched the compartment");
-		//System.out.println("to bring down the ladder to the attic. You climb up the stairs, and ");
-		//System.out.println("realize that it is a little too dark.");
-		//this.inAttic();
-	    this.choice = choice;	
+	    this.location = location;	
 	  }
-	  else if(this.choice == (4)) {
+	  else if(location.equalsIgnoreCase("ChildsRoom")) {
 		System.out.println("This area is closed for beta. Proceed to attic. (= ");
 		this.choosePath();
-	    this.choice = choice;		
+	    this.location = location;		
 	  }
-	}
-  }
-  
-  //placeholder
-  
-  public void endGame(){
-	if (DeathCalc >= 10){
-	  System.out.println("The number on the calculator reads " + DeathCalc + ".");
-      System.out.println("You have exceeded the Calculator's limit.");
-      System.out.println("Ending Simulation...");	
-	  System.out.println("...");
-      System.exit(0);
 	}
   }
   
@@ -99,22 +81,16 @@ public class Player {
   public void setWeapon(String weapon) {
     this.weapon = weapon;
   }
- // public String getLocation() {
-	//return location;
-  //}
-  //public void setLocation(String location) {
-    //this.location = location;
-  //}
-  public String getfreeHand() {
-	return freehand;
+  public String getLocation() {
+	return location;
   }
-  public void setfreeHand(String freehand) {
-	this.freehand = freehand;
+  public void setLocation(String location) {
+    this.location = location;
   }
-  public int getChoice() {
+  public String getChoice() {
 	return choice;
   }
-  public void setChoice(int choice) {
+  public void setChoice(String choice) {
 	this.choice = choice;
   }
   public int getDeathCalc() {

@@ -11,7 +11,8 @@ public class RectProgram {
     Rectangle[] newrects = new Rectangle[2];
     newrects[0] = new Rectangle (4, 40);
     newrects[1] = new Rectangle (3.5, 35.9);
-  
+	
+    //
     System.out.println("\n Rectangle 1");
       System.out.println("Width:     " + newrects[0].getWidth());
       System.out.println("Height:    " + newrects[0].getHeight());

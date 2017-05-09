@@ -7,7 +7,7 @@
 
 import java.util.Scanner;
 
-public class DeathCalculatorAdv{
+public class DeathCalculatorAdv extends Player{
   public static void main (String [] args)throws Exception{
 	
 	Scanner input = new Scanner(System.in); 
@@ -18,21 +18,5 @@ public class DeathCalculatorAdv{
 	user.chooseName();
 	user.chooseWeap();
 	user.choosePath();
-	//user.inAttic();
-	user.endGame();
-	//user.chooseName();
-	
-	System.out.println("");
-	
-	//Player variables
-	//String myHand = "Death Calculator";
-	//String userName;
-	//int DeathCalc;
-	//int CalcResets = 2;
-	
-	//Enemy variables
-	//String[] enemies = {"Spouse", "Little Jimmy", "Your Mother", "Yazmin"};
-	
-	
   }
 }
