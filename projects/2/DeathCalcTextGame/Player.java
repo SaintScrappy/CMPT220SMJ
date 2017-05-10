@@ -48,24 +48,29 @@ public class Player {
       if(location.equalsIgnoreCase("Kitchen")){
 		//Link to location objects.
 		System.out.println("This area is closed for beta. Proceed to attic. (= ");
-		this.choosePath();
 	    this.location = location;
       }	
       else if(location.equalsIgnoreCase("Bathroom")) {
 		System.out.println("This area is closed for beta. Proceed to attic. (= ");
-		this.choosePath(); //NullPointerException
 	    this.location = location;	
 	  }
 	  else if(location.equalsIgnoreCase("Attic")) {
-		Attic attic = new Attic();
-		attic.inAttic();
+		System.out.println("");
 	    this.location = location;	
 	  }
 	  else if(location.equalsIgnoreCase("ChildsRoom")) {
 		System.out.println("This area is closed for beta. Proceed to attic. (= ");
-		this.choosePath();
 	    this.location = location;		
 	  }
+	}
+  }
+  public void endGame(){
+	if (DeathCalc >= 10){
+	  System.out.println("The number on the calculator reads " + DeathCalc + ".");
+      System.out.println("You have exceeded the Calculator's limit.");
+      System.out.println("Ending Simulation...");	
+	  System.out.println("...");
+      System.exit(0);
 	}
   }
   
