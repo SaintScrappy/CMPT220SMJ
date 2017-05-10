@@ -9,17 +9,22 @@ import java.util.Scanner;
 
 public class FinanceMgmt {
   public static void main(String[] args) {
+	  
     double subtotal;
 	double gratuityrate;
 	double gratuity; 
 	double total;
+	
+	Scanner input = new Scanner(System.in); 
+	
     System.out.print("Put your subtotal and gratuity rate. Please space between your numbers. (:");
-    Scanner input=new Scanner(System.in); 
+    
+	//User inputs two doubles for subtotal and gratuityrate
     subtotal = input.nextDouble(); 
     gratuityrate = input.nextDouble(); 
 	
-	gratuity= (gratuityrate/100) * subtotal;
-	total = gratuity+subtotal;
+	gratuity = (gratuityrate/100) * subtotal;
+	total = gratuity + subtotal;
 	
     
     System.out.println( "The subtotal is "+ subtotal+ " and the gratuity rate is "+gratuityrate+" The gratuity is "+gratuity+" the total is "+total);
