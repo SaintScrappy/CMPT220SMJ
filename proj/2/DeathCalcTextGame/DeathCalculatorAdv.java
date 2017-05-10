@@ -5,16 +5,23 @@
 //Due At The End.
 //version: 1.0
 
+/*The Death Calculator is a text-based adventure game that takes some advantage of Object-Oriented Programming 
+in Java, along with conditional statements, method calls, exception handling, and etc.*/
+
 import java.util.Scanner;
 
 public class DeathCalculatorAdv extends Player{
   public static void main (String [] args)throws Exception{
 	
 	Scanner input = new Scanner(System.in); 
-	System.out.println("...");	
-    System.out.println("Now entering DeathCalculator.exe.");
 	
+	System.out.println("...");	
+    System.out.println("Now entering DeathCalculator.jar.");
+	
+	//Creates a new Player object 
 	Player user = new Player();
+	
+	//Methods in Player class which contains parts of the game.
 	user.chooseName();
 	user.chooseWeap();
 	user.choosePath();

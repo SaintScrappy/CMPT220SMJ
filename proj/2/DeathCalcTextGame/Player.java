@@ -1,3 +1,10 @@
+//file: Player.java
+//author: Shawn M Joseph
+//course: CMPT 220
+//assignment: Project 2
+//Due May 11th.
+//version: 1.0
+
 import java.util.Scanner;
 
 public class Player {
@@ -28,10 +35,12 @@ public class Player {
       String weapon = input.nextLine();
 	  if(weapon.equalsIgnoreCase("Toothpick")) {
 	    System.out.println("Hm. Your life rests in your hand.");
+		//Sets weapon not equal to null.
 		this.weapon = "Toothpick";
 	  }
 	  else if(weapon.equalsIgnoreCase("Bible")) {
         System.out.println("");
+		//Sets weapon not equal to null.
 		this.weapon = "Bible";
 	  }
 	}
@@ -46,30 +55,35 @@ public class Player {
 	  String location = input.nextLine();
 	  
       if(location.equalsIgnoreCase("Kitchen")){
-		//Link to location objects.
 		System.out.println("This area is closed for beta. Proceed to attic. (= ");
+		//Sets location not equal to null.
 	    this.location = location;
       }	
       else if(location.equalsIgnoreCase("Bathroom")) {
 		System.out.println("This area is closed for beta. Proceed to attic. (= ");
+		//Sets location not equal to null.
 	    this.location = location;	
 	  }
 	  else if(location.equalsIgnoreCase("Attic")) {
 		System.out.println("");
+		//Sets location not equal to null.
 	    this.location = location;	
 	  }
 	  else if(location.equalsIgnoreCase("ChildsRoom")) {
 		System.out.println("This area is closed for beta. Proceed to attic. (= ");
+		//Sets location not equal to null.
 	    this.location = location;		
 	  }
 	}
   }
+  //Method to end DeathCalculator.jar
   public void endGame(){
 	if (DeathCalc >= 10){
 	  System.out.println("The number on the calculator reads " + DeathCalc + ".");
       System.out.println("You have exceeded the Calculator's limit.");
       System.out.println("Ending Simulation...");	
 	  System.out.println("...");
+	  //The game exits if the int of the Death Calculator reaches 10, or past 10
       System.exit(0);
 	}
   }
