@@ -29,14 +29,16 @@ public class BDayGuesser {
  
     Scanner input = new Scanner(System.in);
  
+    //User inputs answers
     System.out.print("Is your birthday in Set1?\n");
     System.out.print(set1);
     System.out.print("\nEnter N for No and Y for Yes: ");
     String s = input.nextLine();
     char answer = s.charAt(0);
- 
+    
+	//Checks the input and prompts user with another question based on a condition
     if (answer == 'Y')
-     day += 1;
+      day += 1;
     System.out.print("\nIs your birthday in Set2?\n");
     System.out.print(set2);
     System.out.print("\nEnter N for No and Y for Yes: ");
@@ -44,7 +46,7 @@ public class BDayGuesser {
     answer = s.charAt(0);
  
     if (answer == 'Y')
-     day += 2;
+      day += 2;
     System.out.print("Is your birthday in Set3?\n");
     System.out.print(set3);
     System.out.print("\nEnter N for No and Y for Yes: ");
@@ -52,7 +54,7 @@ public class BDayGuesser {
     answer = s.charAt(0);
  
     if (answer == 'Y')
-     day += 4;
+      day += 4;
     System.out.print("\nIs your birthday in Set4?\n");
     System.out.print(set4);
     System.out.print("\nEnter N for No and Y for Yes: ");
@@ -60,7 +62,7 @@ public class BDayGuesser {
     answer = s.charAt(0);
  
     if (answer == 'Y')
-     day += 8;
+      day += 8;
     System.out.print("\nIs your birthday in Set5?\n");
     System.out.print(set5);
     System.out.print("\nEnter N for No and Y for Yes: ");
@@ -68,8 +70,8 @@ public class BDayGuesser {
     answer = s.charAt(0);
  
     if (answer == 'Y')
-     day += 16;
+      day += 16;
  
-      System.out.println("\nYour birthday is " + day + "!");
+    System.out.println("\nYour birthday is " + day + "!");
   }
 }

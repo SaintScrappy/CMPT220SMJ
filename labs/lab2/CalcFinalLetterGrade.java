@@ -15,16 +15,21 @@ public class CalcFinalLetterGrade {
     double project;	
 	double hwlabs;
 	
+	Scanner input = new Scanner(System.in); 
+	
     System.out.print("Put your four rubric percentages. Please put spaces. (: ");
-    Scanner input=new Scanner(System.in); 
+	//User inputs 4 double corresponding to received grades.
+    
    
     midterm = input.nextDouble(); 
 	finalExam = input.nextDouble(); 
 	project = input.nextDouble(); 
 	hwlabs = input.nextDouble(); 
 	
+	//Final grade calculated with sum of inputs / 400 * 100
 	double finalgrade = ((midterm + finalExam + project + hwlabs) / 400)*100; 
 	
+	//Prints letter based on conditions met for final grade.
 	if (finalgrade == 100.0 && finalgrade >= 95.0)
       System.out.print("A");
 	  else if (finalgrade == 94.0 && finalgrade >= 90.0)

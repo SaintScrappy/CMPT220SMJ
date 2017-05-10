@@ -10,8 +10,10 @@ import java.util.Random;
 public class RandomMonth {
   public static void main (String[] args) {
   
+    //Generates random int between 1 and 12
     int random = (int)(Math.random() * 12 + 1);
-  
+    
+	//Displays the month based on conditions met.
     if (random == 1)
       System.out.print("January!");
     else if (random == 2)

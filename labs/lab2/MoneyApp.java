@@ -13,10 +13,16 @@ public class MoneyApp {
     Scanner input = new Scanner(System.in);
  
     System.out.print("Enter a double value. ");
-    String amount = input.next();
+	
+	//User input any amount of money in the form of a double.
+    String amount = input.nextLine();
+	
+	//Extracts the dollars
     int numberOfOneDollars = Integer.parseInt(amount.substring(0, amount.indexOf('.')));
+	//Extracts the cents
     int numberOfCents = Integer.parseInt(amount.substring( amount.indexOf('.')+1));
 
+	//Find number of cents
     int numberOfQuarters = numberOfCents / 25;
     numberOfCents = numberOfCents % 25;
  
@@ -28,11 +34,11 @@ public class MoneyApp {
  
     int numberOfPennies = numberOfCents;
  
-      System.out.println("Your amount " + amount + " has"); 
-      System.out.println("    " + numberOfOneDollars + " dollars");
-      System.out.println("    " + numberOfQuarters + " quarters ");
-      System.out.println("    " + numberOfDimes + " dimes"); 
-      System.out.println("    " + numberOfNickels + " nickels");
-      System.out.println("    " + numberOfPennies + " pennies");
+    System.out.println("Your amount " + amount + " has"); 
+    System.out.println("    " + numberOfOneDollars + " dollars");
+    System.out.println("    " + numberOfQuarters + " quarters ");
+    System.out.println("    " + numberOfDimes + " dimes"); 
+    System.out.println("    " + numberOfNickels + " nickels");
+    System.out.println("    " + numberOfPennies + " pennies");
 	}
 }
