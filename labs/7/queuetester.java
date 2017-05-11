@@ -1,3 +1,10 @@
+//file: queuetester.java
+//author: Shawn M Joseph
+//course: CMPT 220
+//assignment: Lab 7
+//Due April 27th
+//version: 1.0
+
 public class queuetester {
   public static void main(String[] args){
 	  

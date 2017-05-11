@@ -1,11 +1,19 @@
+//file: Queue.java
+//author: Shawn M Joseph
+//course: CMPT 220
+//assignment: Lab 7
+//Due April 27th
+//version: 1.0
+
 public class Queue {
 	
   private int[] elements;
   private int size;
-  private int capacity = 8;
+  private static final int DEFAULT_CAPACITY = 8;
   
-  
-  public Queue () {}
+  public Queue () {
+	elements = new int[DEFAULT_CAPACITY];
+  }
   
   public void enqueue(int v) {
   //adds v into the queue
@@ -28,6 +36,8 @@ public class Queue {
   //return true if queue is empty (loop)
     return size == 0;
   }
+  
+  //Setters & Getters
   public int[] getElements() {
     return elements;
   }
