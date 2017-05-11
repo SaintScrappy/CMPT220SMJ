@@ -8,13 +8,16 @@
 import java.util.Scanner;
 
 public class StringLength {
-  public static void main (String[] args) {
+  public static void main(String[] args) {
 	  
     Scanner input = new Scanner(System.in);
+	
     System.out.print("Type out a string: ");
     String s = input.nextLine();
 	System.out.println("The number of letters is " + countLetters(s));
   }
+  
+  //Increments letter count for each letter in a string 
   public static int countLetters(String s) {
  
     int countLetter = 0;
@@ -26,7 +29,9 @@ public class StringLength {
     }
     return countLetter;
   }
-    public static boolean isLetter(char ch) {
+  
+  //Checks for letter characters in input
+  public static boolean isLetter(char ch) {
     return ((ch <= 'z' && ch >= 'a') || (ch <= 'Z' && ch >= 'A'));
-    }
+  }
 }

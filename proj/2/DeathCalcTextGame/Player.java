@@ -81,7 +81,7 @@ public class Player {
   public void inAttic(){
   }
   public void suddenRealization(){
-	this.inKitchen
+    this.inKitchen();
   }
   
   //Method to end DeathCalculator.jar by either lost or win
