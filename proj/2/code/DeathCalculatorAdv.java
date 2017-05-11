@@ -35,5 +35,8 @@ public class DeathCalculatorAdv extends Player {
 	  user.inKitchen();
     else if (user.getLocation() == "Attic")
 	  user.inAttic();
+    
+	//Calls method after user successfully makes it through other methods.
+    user.winGame();
   }
 }

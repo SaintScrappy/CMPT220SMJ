@@ -5,6 +5,14 @@
 //Due April 27th
 //version: 1.0
 
+/*   Queue                           */
+/*   elements: double                */
+/*   size: double                    */
+/*   DEFAULT_CAPACITY: final int(8)  */
+/*   enqueue(int v)                  */
+/*   dequeue(): int                  */
+/*   empty(): boolean                */
+
 public class Queue {
 	
   private int[] elements;
