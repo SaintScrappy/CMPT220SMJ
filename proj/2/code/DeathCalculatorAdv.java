@@ -8,7 +8,8 @@
 /*The Death Calculator is a text-based adventure game that takes some advantage of Object-Oriented Programming 
 in Java, along with conditional statements, method calls, exception handling, and etc. This file uses the Player
 object to call methods that will progress the game. The major method used is endGame which is suppose to end 
-the program if variable DeathCalc gets to 10 at the end of each method.*/
+the program if variable DeathCalc gets to 10 at the end of each method. The player/user has to decide which choices
+would be most suitable for the situations that they are presented with. It is easy to win this beta.*/
 
 import java.util.Scanner;
 

@@ -21,13 +21,6 @@ public class Player {
     input = new Scanner(System.in);
 	this.DeathCalc = 0;
   }
-  public void taxReturn(double income) throws IllegalArgumentException {
-    if (income < 0) {
-      throw new IllegalArgumentException(
-        "Income can't be less than zero.");
-    }
-    this.income = income;
-  }
 	
   //Method called to ask user for their name and allow their input to == name attribute.
   public void chooseName(){
@@ -87,26 +80,51 @@ public class Player {
   public void inKitchen(){
 	System.out.print("You arrive in the kitchen and greet your spouse.");
 	System.out.print("They start nagging you about the contributions that you haven't made in the past 3 years.");
-	System.out.print("You arrive in the kitchen and greet your spouse.");
+	System.out.print("Wow. What a rocky relationship.");
+	this.DeathCalc = DeathCalc + 2;
+	endGame();
+	System.out.print("Your spouse leaves the kitchen, and comes back 2 seconds later and throws down some form.");
+	System.out.print("You peek at it, and your heart skips a beat.");
 	doTaxes();
   }
-  public void doTaxes(){
+  public void doTaxes()throws IllegalArgumentException{
 	System.out.println("Your knees are weak, and your palms sweaty.");
+	System.out.println("Lucky for you in the Beta, you get a freebie!");
+	/*double income = input.nextDouble();
+	if (income < 0) {
+      throw new IllegalArgumentException(
+        "Income can't be less than zero.");
+    }
+    this.income = income;
+	getTax();*/
+
+	System.out.println("Are you still there... Good. We all become victims of tax.");
+	System.out.println("No need to be ashamed!");
 	eatOrNot();
   }
+  
   public void eatOrNot(){
+	  
 	System.out.println("Your spouse brings you a plate with... eggs and bacon?");
 	System.out.println("I honestly don't know what it is... My God...Did the bacon just move?!?!");
 	System.out.println("You have a long day ahead of you. And breakfast is the msot important meal of the day.");
 	System.out.println("Will you eat?");
+	System.out.println("1. Yes\n2. No");
+	this.choice = input.nextLine();
+	//Runs either statement based on user's input
 	if (choice == "1") {
       System.out.print("You pick up the bacon, take a bite, and realize that it's not too bad.");
 	  System.out.print("Sure. The presentation could use some work, but the meal hits the spot.");
+	  this.choice = "1";
 	}
-	else if() {
-     
+	else if(choice == "2") {
+	  System.out.println("That is a mistake.");
+      System.out.println("Your spouse notices you haven'touched your plate and scolds you.");
+	  this.DeathCalc = DeathCalc + 3;
+	  this.choice = "2";
 	}
-	System.out.println("You made it through the morning, but you have a whole mediocre(or not) ahead of you");
+	System.out.println("You made it through the morning, but you have a whole mediocre(or not) ahead of you.");
+	System.out.println("You did good" + name + ".");
   }
   
   //Choice methods here (Attic)
@@ -176,20 +194,20 @@ public class Player {
       System.exit(0);
 	}
   }
-  public void getTax() {
-        if (income <= 50000) {
-          income *= 0.01;
-        } else if (income <= 75000) {
-            income *= 0.02;
-        } else if (income <= 100000) {
-            income *= 0.03;
-        } else if (income <= 250000) {
-            income *= 0.04;
-        } else if (income <= 500000) {
-            income *= 0.05;
-        } else
-            income *= 0.06;
-  }
+  /*public void getTax() {
+    if (income <= 50000) {
+      income *= 0.01;
+    } else if (income <= 75000) {
+        income *= 0.02;
+    } else if (income <= 100000) {
+        income *= 0.03;
+    } else if (income <= 250000) {
+        income *= 0.04;
+    } else if (income <= 500000) {
+        income *= 0.05;
+    } else
+        income *= 0.06;
+  }*/
   
   //Here lies all setters & getters.
   public String getName() {
