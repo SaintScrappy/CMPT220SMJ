@@ -55,29 +55,48 @@ public class Player {
 	  String location = input.nextLine();
 	  
       if(location.equalsIgnoreCase("Kitchen")){
-		System.out.println("This area is closed for beta. Proceed to attic. (= ");
+		System.out.println("You venture out of your bedroom to see what horrors await.");
+		System.out.println("As you slowly inch down the hallway a smell ");
 		//Sets location not equal to null.
 	    this.location = location;
       }	
-      else if(location.equalsIgnoreCase("Bathroom")) {
-		System.out.println("This area is closed for beta. Proceed to attic. (= ");
-		//Sets location not equal to null.
-	    this.location = location;	
-	  }
 	  else if(location.equalsIgnoreCase("Attic")) {
 		System.out.println("");
 		//Sets location not equal to null.
 	    this.location = location;	
 	  }
-	  else if(location.equalsIgnoreCase("ChildsRoom")) {
-		System.out.println("This area is closed for beta. Proceed to attic. (= ");
-		//Sets location not equal to null.
-	    this.location = location;		
-	  }
 	}
   }
-  //Method to end DeathCalculator.jar
+  //Choice methods here (Kitchen)
+  public void inKitchen(){
+	System.out.print("");
+  }
+  public void doTaxes(){
+	System.out.println("Your knees are weak ");
+  }
+  public void eatOrNot(){
+  }
+  
+  //Choice methods here (Attic)
+  public void inAttic(){
+  }
+  public void suddenRealization(){
+	this.inKitchen
+  }
+  
+  //Method to end DeathCalculator.jar by either lost or win
+  public void winGame() {
+    System.out.println("Now exiting Beta DeathCalculator.jar...");
+	System.out.println("Congrats. You won the beta.");
+	System.out.println("Now get yourself a cup of Java, and get back to life.");
+	//
+	System.out.println("Your final count is: " + DeathCalc);
+	System.out.println("Enter anything to exit program.");
+	String choice = input.nextLine();
+	System.exit(0);
+  }
   public void endGame(){
+	//if statement checks if DeathCalc var is at 10
 	if (DeathCalc >= 10){
 	  System.out.println("The number on the calculator reads " + DeathCalc + ".");
       System.out.println("You have exceeded the Calculator's limit.");
@@ -88,6 +107,7 @@ public class Player {
 	}
   }
   
+  //Here lies all setters & getters.
   public String getName() {
 	return name;
   }
