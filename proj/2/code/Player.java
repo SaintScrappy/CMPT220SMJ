@@ -8,6 +8,7 @@
 import java.util.Scanner;
 
 public class Player {
+	
   private String name;
   private String weapon;
   private Scanner input;
@@ -21,6 +22,7 @@ public class Player {
   }
   //Method called to ask user for their name and allow their input to == name attribute.
   public void chooseName(){
+	  
     System.out.println("What is your name?");
 	this.name = this.input.nextLine();
 	System.out.println("Ah..." + this.name + ". That's a nice name..");
@@ -58,18 +60,19 @@ public class Player {
 		System.out.println("You venture out of your bedroom to see what horrors await.");
 		System.out.println("As you slowly inch down the hallway a smell ");
 		//Sets location not equal to null.
-	    this.location = location;
+	    this.location = "Kitchen";
       }	
 	  else if(location.equalsIgnoreCase("Attic")) {
 		System.out.println("");
 		//Sets location not equal to null.
-	    this.location = location;	
+	    this.location = "Attic";	
 	  }
 	}
   }
   //Choice methods here (Kitchen)
   public void inKitchen(){
-	System.out.print("");
+	System.out.print("yes");
+	input.nextLine();
   }
   public void doTaxes(){
 	System.out.println("Your knees are weak ");

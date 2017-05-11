@@ -9,6 +9,7 @@ public class Queue {
 	
   private int[] elements;
   private int size;
+  //This attribute won't change.
   private static final int DEFAULT_CAPACITY = 8;
   
   public Queue () {

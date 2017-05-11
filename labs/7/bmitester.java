@@ -6,7 +6,7 @@
 //version: 1.0
 
 public class bmitester {
-  public static void main (String[] args) {
+  public static void main(String[] args) {
 	
     //Creates new BMI object and print BMI and Status.	
     BMI j = new BMI("Joseph", 19, 140, 5, 7);
