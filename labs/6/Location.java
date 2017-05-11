@@ -5,17 +5,27 @@
 //Due April 20th
 //version: 1.0 
 
+/*   Location       */
+/*   row: int       */
+/*   column: int    */
+/*   maxValue: double  */
+/*   Location(row: int, column: int, maxValue: double)   */
+/*   locateLargest(): double  */
+
 public class Location {
 	
   private int row;
   private int column; 
   private double maxValue;
   
+  //Default Location constructor; sets attribute values
   public Location (int row, int column, double maxValue) {
     this.row = row;
 	this.column = column;
 	this.maxValue = maxValue;
   }
+  
+  //Setters and Getters
   public int getRow() {
     return this.row;
   }
@@ -34,6 +44,7 @@ public class Location {
   public void setmaxValue(double maxValue) {
     this.maxValue = maxValue;
   }
+  
   //Gets largest element
   public static Location locateLargest(double[][]a) {
 	int row = 0;
