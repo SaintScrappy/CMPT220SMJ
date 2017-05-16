@@ -1,0 +1,15 @@
+36 pts
+
+The project attempts to show your death.
+The idea has good merit. 
+
+However, there are some issues...
+Code:
+- There are typos or gramatical errors. -1pt
+
+- You are using tabs. -1pt
+
+- There is incorrect indentation. -1pt
+
+Overall:
+- Decent work below average of an SD1 student. -1pt
